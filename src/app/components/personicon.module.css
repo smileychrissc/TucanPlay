@@ -1,0 +1,70 @@
+
+.person_wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.person_head {
+	width: 9px;
+	height: 9px;
+	background-color: lightgrey;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.person_head_small {
+	width: 7px;
+	height: 7px;
+	background-color: lightgrey;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.person_body {
+	width: 11px;
+	height: 13px;
+	margin-top: 1px;
+	background-color: lightgrey;
+	border: 1px solid black;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.person_body_small {
+	width: 9px;
+	height: 7px;
+	margin-top: 1px;
+	background-color: lightgrey;
+	border: 1px solid black;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+@media (max-width: 700px) or (any-pointer: coarse) or (any-pointer: none) {
+	.person_head {
+		width: 19px;
+		height: 19px;
+		border-radius: 9px;
+	}	
+	.person_head_small {
+		width: 11px;
+		height: 11px;
+		border-radius: 5px;
+	}	
+	.person_body {
+		width: 23px;
+		height: 27px;
+		margin-top: 2px;
+		border-top-left-radius: 11px;
+		border-top-right-radius: 11px;
+	}
+	.person_body_small {
+		width: 15px;
+		height: 11px;
+		margin-top: 1px;
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+	}
+}
